@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cargos",
+  "info": {
+    "singularName": "cargo",
+    "pluralName": "cargos",
+    "displayName": "Cargo",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "blocked": {
+      "type": "boolean",
+      "default": false
+    },
+    "counterparties": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::counterpartie.counterpartie",
+      "inversedBy": "cargos"
+    }
+  }
+}

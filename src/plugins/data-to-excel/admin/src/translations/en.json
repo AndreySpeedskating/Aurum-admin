@@ -1,0 +1,13 @@
+{
+  "page.title": "Convert data to excel",
+  "page.date": "today is: ",
+  "select.title": "Content-type",
+  "select.description": "Select content-type for excel export",
+  "date.start.title": "Start date",
+  "time.start.title": "Start time",
+  "date.end.title": "End date",
+  "time.end.title": "End time",
+  "plugin.name": "Export to Excel",
+  "page.export.button": "Download",
+  "page.find.button": "Find"
+}

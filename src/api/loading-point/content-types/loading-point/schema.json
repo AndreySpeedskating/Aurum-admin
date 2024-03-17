@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "loading_points",
+  "info": {
+    "singularName": "loading-point",
+    "pluralName": "loading-points",
+    "displayName": "LoadingPoint",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "blocked": {
+      "type": "boolean",
+      "default": false
+    },
+    "counterparties": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::counterpartie.counterpartie",
+      "mappedBy": "loading_points"
+    }
+  }
+}

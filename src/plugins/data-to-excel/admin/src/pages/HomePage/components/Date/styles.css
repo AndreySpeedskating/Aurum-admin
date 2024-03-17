@@ -1,0 +1,9 @@
+.data-to-excel-date-picker-container {
+  display: flex;
+  column-gap: 4px;
+  max-width: 324px;
+}
+
+.data-to-excel-date-picker-container > fieldset > span > div > div {
+  min-width: 138px;
+}

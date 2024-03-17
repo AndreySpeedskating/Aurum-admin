@@ -1,0 +1,64 @@
+{
+  "name": "strapi-aurum-admin",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Admin panel Aurum",
+  "scripts": {
+    "develop": "rm -rf ./build && rm -rf ./.cache && strapi develop",
+    "start": "strapi start",
+    "build": "rm -rf ./build && rm -rf ./.cache && strapi build",
+    "strapi": "strapi",
+    "format": "prettier --write src/**/*.{js,jsx,ts,tsx} --config ./.prettierrc"
+  },
+  "dependencies": {
+    "@strapi/helper-plugin": "^4.12.5",
+    "@strapi/plugin-i18n": "4.12.5",
+    "@strapi/strapi": "4.12.5",
+    "bcryptjs": "2.4.3",
+    "codemirror": "^6.0.1",
+    "formik": "2.4.0",
+    "grant-koa": "5.4.8",
+    "immer": "9.0.19",
+    "json-as-xlsx": "^2.5.3",
+    "jsonwebtoken": "9.0.0",
+    "jwk-to-pem": "2.0.5",
+    "koa": "2.13.4",
+    "koa2-ratelimit": "^1.1.2",
+    "lodash": "4.17.21",
+    "mysql2": "^3.6.0",
+    "prop-types": "^15.8.1",
+    "purest": "4.0.2",
+    "react-intl": "6.4.1",
+    "react-query": "3.39.3",
+    "react-redux": "8.1.1",
+    "url-join": "4.0.1",
+    "xlsx": "^0.18.5",
+    "yup": "0.32.9"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "9.2.0",
+    "@testing-library/react": "14.0.0",
+    "@testing-library/user-event": "14.4.3",
+    "msw": "1.2.1",
+    "prettier": "3.0.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "5.3.4",
+    "styled-components": "5.3.3"
+  },
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0",
+    "react-router-dom": "5.3.4",
+    "styled-components": "5.3.3"
+  },
+  "author": {
+    "name": "Pristalov Andrey"
+  },
+  "strapi": {},
+  "engines": {
+    "node": ">=14.19.1 <=18.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

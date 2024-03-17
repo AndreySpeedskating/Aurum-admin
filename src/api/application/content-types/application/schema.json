@@ -1,0 +1,105 @@
+{
+  "kind": "collectionType",
+  "collectionName": "applications",
+  "info": {
+    "singularName": "application",
+    "pluralName": "applications",
+    "displayName": "Application",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "SendDate": {
+      "pluginOptions": {},
+      "type": "datetime",
+      "required": true
+    },
+    "ApplicationDate": {
+      "pluginOptions": {},
+      "type": "date",
+      "required": true
+    },
+    "ApplicationNumber": {
+      "pluginOptions": {},
+      "type": "string",
+      "unique": false,
+      "required": true
+    },
+    "loading_point": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::loading-point.loading-point"
+    },
+    "unloading_point": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::unloading-point.unloading-point"
+    },
+    "counterpartie": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::counterpartie.counterpartie"
+    },
+    "geolink": {
+      "type": "string"
+    },
+    "auto_park": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::auto-park.auto-park"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "approved": {
+      "type": "boolean",
+      "default": false,
+      "required": false,
+      "private": true
+    },
+    "volume": {
+      "type": "customField",
+      "required": true,
+      "customField": "plugin::input-mask.input-mask"
+    },
+    "weight": {
+      "type": "customField",
+      "required": true,
+      "customField": "plugin::input-mask.input-mask"
+    },
+    "milleage": {
+      "type": "decimal"
+    },
+    "alt_loading_point": {
+      "type": "string",
+      "minLength": 3
+    },
+    "alt_unloading_point": {
+      "type": "text",
+      "minLength": 3,
+      "maxLength": 1024
+    },
+    "cargo": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::cargo.cargo"
+    },
+    "loading_time": {
+      "type": "datetime"
+    },
+    "unloading_time": {
+      "type": "datetime"
+    },
+    "ApplicationPhoto": {
+      "type": "text"
+    },
+    "AppVersion": {
+      "type": "string"
+    }
+  }
+}

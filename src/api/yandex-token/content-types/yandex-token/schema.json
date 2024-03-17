@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "yandex_tokens",
+  "info": {
+    "singularName": "yandex-token",
+    "pluralName": "yandex-tokens",
+    "displayName": "YandexToken",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Token": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "extends": "@strapi/typescript-utils/tsconfigs/server",
+
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "."
+  },
+
+  "exclude": [
+    "node_modules/",
+    "dist/",
+
+    // Do not include admin files in the server compilation
+    "admin/",
+    // Do not include test files
+    "**/*.test.ts"
+  ]
+}

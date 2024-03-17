@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "unloading_points",
+  "info": {
+    "singularName": "unloading-point",
+    "pluralName": "unloading-points",
+    "displayName": "UnloadingPoint",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "blocked": {
+      "type": "boolean",
+      "default": false
+    },
+    "counterparties": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::counterpartie.counterpartie",
+      "mappedBy": "unloading_points"
+    }
+  }
+}

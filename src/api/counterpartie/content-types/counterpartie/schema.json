@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "counterparties",
+  "info": {
+    "singularName": "counterpartie",
+    "pluralName": "counterparties",
+    "displayName": "Counterpartie",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "pluginOptions": {},
+      "type": "string"
+    },
+    "cargos": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::cargo.cargo",
+      "inversedBy": "counterparties"
+    },
+    "loading_points": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::loading-point.loading-point",
+      "inversedBy": "counterparties"
+    },
+    "unloading_points": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::unloading-point.unloading-point",
+      "inversedBy": "counterparties"
+    },
+    "blocked": {
+      "pluginOptions": {},
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

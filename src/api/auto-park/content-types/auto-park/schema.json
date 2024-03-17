@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "auto_parks",
+  "info": {
+    "singularName": "auto-park",
+    "pluralName": "auto-parks",
+    "displayName": "AutoPark",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "GarageNumber": {
+      "pluginOptions": {},
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "StateNumber": {
+      "pluginOptions": {},
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "BrandModel": {
+      "pluginOptions": {},
+      "type": "string"
+    },
+    "volume": {
+      "pluginOptions": {},
+      "type": "string"
+    },
+    "blocked": {
+      "pluginOptions": {},
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

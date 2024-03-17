@@ -1,0 +1,13 @@
+{
+  "page.title": "Выгрузка записей в excel",
+  "page.date": "сегодня: ",
+  "select.title": "Коллекция",
+  "select.description": "Выберите тип для экстопрта excel",
+  "date.start.title": "Дата от",
+  "time.start.title": "Время от",
+  "date.end.title": "Дата до",
+  "time.end.title": "Время до",
+  "plugin.name": "Выгрузка ТТН",
+  "page.export.button": "Выгрузить",
+  "page.find.button": "Найти"
+}
